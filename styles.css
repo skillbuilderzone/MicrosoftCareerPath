@@ -96,15 +96,15 @@ footer p {
 }
 
 .about-section {
-    width: 25%; /* Adjust width as needed */
+    width: 15%; /* Adjust width as needed */
     padding: 20px;
     margin-left: 20px;
-    background-color: #f9f9f9; /* Light background for the sidebar */
+    background-color: #eeabab; /* Light background for the sidebar */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed; /* Makes the sidebar stay in place while scrolling */
     right: 20px; /* Distance from the right edge of the viewport */
-    top: 100px; /* Distance from the top, adjust based on header height */
+    top: 120px; /* Distance from the top, adjust based on header height */
     height: calc(100% - 120px); /* Adjust height as necessary */
 }
 
