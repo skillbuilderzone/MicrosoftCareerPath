@@ -1,4 +1,3 @@
-//comment
 document.addEventListener("DOMContentLoaded", function() {
     // Get all the "certification" section headers
     const headers = document.querySelectorAll('.certification h2');
