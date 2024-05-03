@@ -7,12 +7,12 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Arial, sans-serif;
-    color: black;
-    background-color: #f0f4f8;
+    color: #333; /* Dark grey for text */
+    background-color: #f4f4f9; /* Light grey background for a subtle look */
 }
 
 header, footer {
-    background-color: #0078D4; /* Azure blue */
+    background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%); /* Gradient from deep to light blue */
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -27,6 +27,7 @@ main {
     background-color: white;
     margin: 10px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .certification {
@@ -34,7 +35,7 @@ main {
 }
 
 .certification h2 {
-    color: #0078D4; /* Azure blue */
+    color: #0056b3; /* Darker blue for headers */
     cursor: pointer;
     padding: 10px 0;
 }
@@ -55,8 +56,14 @@ main {
 }
 
 .certification img {
-    width: 40px; /* Set the logo size */
+    width: 40px; /* Approximate almond size in width */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between logo and text */
+}
+
+.certification p {
+    flex: 1; /* Allows the text to fill the remaining space */
+    padding-top: 10px;
 }
 
 footer p {
