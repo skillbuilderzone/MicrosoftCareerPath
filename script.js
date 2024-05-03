@@ -5,12 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add a click event listener to each header
     headers.forEach(header => {
         header.addEventListener('click', function() {
-            // Toggle the 'active' class on the section
-            const section = header.parentElement;
-            section.classList.toggle('active');
+            // This finds the next sibling element (which should be the <ul> list) and toggles its display
+            const list = this.nextElementSibling;
 
-            // Toggle display of the list under the header
-            const list = section.querySelector('ul');
             if (list.style.display === 'block') {
                 list.style.display = 'none';
             } else {
