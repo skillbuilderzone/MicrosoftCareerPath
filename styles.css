@@ -1,7 +1,8 @@
 /* Basic reset for margins and padding */
-body, h1, h2, p {
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 body {
@@ -34,6 +35,17 @@ main {
 
 .certification h2 {
     color: #0078D4; /* Azure blue */
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.certification ul {
+    display: none; /* Hide details by default */
+    padding-left: 20px; /* Add some padding for the list */
+}
+
+.certification.active ul {
+    display: block; /* Show details when the section is active */
 }
 
 footer p {
@@ -42,14 +54,13 @@ footer p {
 
 /* Responsive layout adjustments */
 @media (max-width: 600px) {
-    body {
+    body, header, footer, main {
         padding: 10px;
     }
     header, footer {
         padding: 10px 5px;
     }
     main {
-        padding: 10px;
         margin: 5px;
     }
 }
