@@ -9,10 +9,11 @@ body {
     font-family: Arial, sans-serif;
     color: #333; /* Dark grey for text */
     background-color: #f4f4f9; /* Light grey background for a subtle look */
+    line-height: 1.6; /* Improved line spacing for better readability */
 }
 
 header, footer {
-    background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%); /* Gradient from deep to light blue */
+    background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%);
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -25,70 +26,64 @@ header h1 {
 main {
     padding: 20px;
     background-color: white;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto; /* Center align the main content */
+    max-width: 800px; /* Optimal line length for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .introduction p {
-    font-size: 18px; /* Larger font for introduction */
-    padding-bottom: 20px; /* Extra space below the paragraph */
+    font-size: 20px; /* Slightly larger font for the introduction */
+    padding: 20px 0; /* Generous space for breathing room */
+    text-align: justify; /* Optional: justifies text for a clean edge */
 }
 
 .certification {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* More space between sections */
+    padding: 20px; /* Inner spacing */
 }
 
 .certification h2 {
-    color: #0056b3; /* Darker blue for headers */
-    cursor: pointer;
-    padding: 10px 0;
+    color: #0056b3;
+    margin-bottom: 15px; /* More space below the headers */
+    font-size: 24px; /* Larger font size for section headers */
 }
 
 .certification ul {
-    display: none; /* Hide details by default */
-    padding-left: 20px; /* Add some padding for the list */
+    display: none;
+    padding-left: 20px;
 }
 
 .certification.active ul {
-    display: block; /* Show details when the section is active */
+    display: block;
 }
 
 .certification li {
-    padding: 10px 0;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Ensures content wraps on small screens */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .certification img {
-    width: 120px; /* Approximate almond size in width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between logo and text */
+    width: 140px;
+    margin-bottom: 5px;
 }
 
 .certification p, .certification a {
-    flex: 1; /* Allows text and links to expand as needed */
-    margin-right: 10px; /* Adds spacing between elements */
-    white-space: nowrap; /* Prevents breaking into multiple lines */
+    margin-right: 10px;
+    white-space: normal;
 }
 
 footer p {
-    font-size: small;
+    font-size: 16px; /* Slightly larger footer font */
+    padding: 10px 0; /* Padding for footer */
 }
 
 /* Responsive layout adjustments */
 @media (max-width: 600px) {
-    body, header, footer, main {
-        padding: 10px;
-    }
-    header, footer {
-        padding: 10px 5px;
-    }
     main {
-        margin: 5px;
-    }
-    .certification p, .certification a {
-        white-space: normal; /* Allows text to wrap on small screens */
+        margin: 10px;
+        padding: 10px;
     }
 }
