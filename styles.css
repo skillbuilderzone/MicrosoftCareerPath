@@ -24,12 +24,17 @@ header h1 {
 }
 
 main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-    max-width: 1000px; /* Limiting width for better readability */
-    margin: auto; /* Centering main within the viewport */
+    max-width: 1200px; /* Adjusted width for better layout */
+    margin: 20px auto; /* Increased margin for aesthetic spacing */
     background-color: white; /* Clear distinction from background */
     border-radius: 8px; /* Soft rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Needed for correct positioning of sidebar */
 }
 
 .introduction p {
@@ -41,6 +46,7 @@ main {
 }
 
 .certification {
+    width: 80%; /* Adjust width to make space for sidebar */
     margin-bottom: 30px;
 }
 
@@ -66,7 +72,7 @@ main {
 }
 
 .certification img {
-    width: 120px; /* Consistent icon size */
+    width: 100px; /* Reduced icon size for better fit */
     margin-right: 10px;
 }
 
@@ -92,11 +98,10 @@ footer p {
     padding: 10px 0;
     text-align: center; /* Centered footer text */
     color: #666; /* Soft grey for footer text */
-
 }
 
 .about-section {
-    width: 15%; /* Adjust width as needed */
+    width: 18%; /* Adjust width as needed */
     padding: 20px;
     margin-left: 20px;
     background-color: #eeabab; /* Light background for the sidebar */
@@ -104,7 +109,7 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed; /* Makes the sidebar stay in place while scrolling */
     right: 20px; /* Distance from the right edge of the viewport */
-    top: 120px; /* Distance from the top, adjust based on header height */
+    top: 100px; /* Distance from the top, adjust based on header height */
     height: calc(100% - 120px); /* Adjust height as necessary */
 }
 
@@ -117,4 +122,46 @@ footer p {
     font-size: 14px;
     line-height: 1.6;
     color: #666;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-area, .about-section {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .about-section {
+        position: static;
+        padding: 15px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .certification img {
+        width: 60px;
+    }
+
+    header, footer {
+        padding: 15px 5px;
+    }
+
+    .introduction p, .certification p {
+        font-size: 16px;
+    }
+
+    .certification h2 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
