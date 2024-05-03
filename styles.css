@@ -1,1 +1,55 @@
+/* Basic reset for margins and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #f0f4f8;
+}
+
+header, footer {
+    background-color: #0078D4; /* Azure blue */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.certification {
+    margin-bottom: 20px;
+}
+
+.certification h2 {
+    color: #0078D4; /* Azure blue */
+}
+
+footer p {
+    font-size: small;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    header, footer {
+        padding: 10px 5px;
+    }
+    main {
+        padding: 10px;
+        margin: 5px;
+    }
+}
