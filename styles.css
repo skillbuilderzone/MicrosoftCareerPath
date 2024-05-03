@@ -62,7 +62,7 @@ main {
 }
 
 .certification img {
-    width: 40px; /* Approximate almond size in width */
+    width: 80px; /* Approximate almond size in width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between logo and text */
 }
