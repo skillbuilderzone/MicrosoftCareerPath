@@ -92,15 +92,7 @@ footer p {
     padding: 10px 0;
     text-align: center; /* Centered footer text */
     color: #666; /* Soft grey for footer text */
-}
 
-main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.certification {
-    width: 70%; /* Adjust width as needed */
 }
 
 .about-section {
