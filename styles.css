@@ -30,6 +30,11 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
+.introduction p {
+    font-size: 18px; /* Larger font for introduction */
+    padding-bottom: 20px; /* Extra space below the paragraph */
+}
+
 .certification {
     margin-bottom: 20px;
 }
@@ -53,17 +58,19 @@ main {
     padding: 10px 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Ensures content wraps on small screens */
 }
 
 .certification img {
-    width: 80px; /* Approximate almond size in width */
+    width: 40px; /* Approximate almond size in width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between logo and text */
 }
 
-.certification p {
-    flex: 1; /* Allows the text to fill the remaining space */
-    padding-top: 10px;
+.certification p, .certification a {
+    flex: 1; /* Allows text and links to expand as needed */
+    margin-right: 10px; /* Adds spacing between elements */
+    white-space: nowrap; /* Prevents breaking into multiple lines */
 }
 
 footer p {
@@ -80,5 +87,8 @@ footer p {
     }
     main {
         margin: 5px;
+    }
+    .certification p, .certification a {
+        white-space: normal; /* Allows text to wrap on small screens */
     }
 }
