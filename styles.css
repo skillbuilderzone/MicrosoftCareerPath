@@ -6,79 +6,90 @@ body, h1, h2, p, ul {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    color: #333; /* Dark grey for text */
+    background-color: #f4f4f9; /* Light grey background for a subtle look */
+    line-height: 1.6; /* Improved line spacing for readability */
 }
 
 header, footer {
-    background: linear-gradient(135deg, #0078D4 0%, #00BCF2 100%);
+    background: linear-gradient(to right, #0078D4, #00BCF2); /* Modern gradient background */
     color: white;
     text-align: center;
     padding: 20px 10px;
 }
 
 header h1 {
-    margin-bottom: 20px; /* Increase spacing under the header */
+    margin-bottom: 20px;
 }
 
 main {
     padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 1000px; /* Adjusted for a more compact layout */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limiting width for better readability */
+    margin: auto; /* Centering main within the viewport */
+    background-color: white; /* Clear distinction from background */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .introduction p {
     font-size: 18px;
-    margin-bottom: 20px;
-    text-align: left; /* Align text to the left for a cleaner look */
+    padding: 20px; /* Comfortable padding around text */
+    color: #666; /* Softer color for introductory text */
+    border-bottom: 1px solid #ccc; /* Separator for the introduction */
+    margin-bottom: 20px; /* Space before the first section */
 }
 
 .certification {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid layout */
-    gap: 20px; /* Space between grid items */
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .certification h2 {
-    color: #0056b3;
-    font-size: 20px;
+    font-size: 22px;
+    color: #0056b3; /* Brand color for headers */
+    padding-bottom: 10px; /* Space between header and content */
+    border-bottom: 2px solid #0056b3; /* Accent under headers */
     margin-bottom: 10px;
 }
 
-.certification li {
-    background: #f0f0f0; /* Light background for each card */
-    border-radius: 10px; /* Rounded corners for cards */
+.certification ul {
+    display: block;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Align items to the start of the container */
+}
+
+.certification li {
+    background: #fff; /* White background for each list item */
+    border-left: 5px solid #0078D4; /* Left border for style */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between list items */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for 3D effect */
 }
 
 .certification img {
-    width: 60px; /* Smaller images for a more compact layout */
-    margin-bottom: 5px;
+    width: 60px; /* Consistent icon size */
+    margin-right: 10px;
 }
 
-.certification p, .certification a {
-    margin: 5px 0; /* Reduced margin for a tighter layout */
-    white-space: normal;
-    text-align: left; /* Ensure text is left-aligned */
+.certification strong {
+    font-size: 16px; /* Slightly larger font for emphasis */
+    color: #333; /* Darker for better readability */
+}
+
+.certification p {
+    margin-top: 5px;
+}
+
+.certification a {
+    display: inline-block;
+    font-size: 14px;
+    color: #0078D4; /* Keeping brand colors consistent */
+    text-decoration: none; /* No underline for a cleaner look */
+    margin-top: 5px;
 }
 
 footer p {
     font-size: 16px;
-    padding: 20px 0;
-}
-
-@media (max-width: 600px) {
-    .certification {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
-    }
+    padding: 10px 0;
+    text-align: center; /* Centered footer text */
+    color: #666; /* Soft grey for footer text */
 }
