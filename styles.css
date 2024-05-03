@@ -7,9 +7,9 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Arial, sans-serif;
-    color: #333; /* Dark grey for text */
-    background-color: #f4f4f9; /* Light grey background for a subtle look */
-    line-height: 1.6; /* Improved line spacing for better readability */
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
 }
 
 header, footer {
@@ -20,70 +20,65 @@ header, footer {
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increase spacing under the header */
 }
 
 main {
     padding: 20px;
     background-color: white;
-    margin: 20px auto; /* Center align the main content */
-    max-width: 800px; /* Optimal line length for readability */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto;
+    max-width: 1000px; /* Adjusted for a more compact layout */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .introduction p {
-    font-size: 20px; /* Slightly larger font for the introduction */
-    padding: 20px 0; /* Generous space for breathing room */
-    text-align: justify; /* Optional: justifies text for a clean edge */
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left for a cleaner look */
 }
 
 .certification {
-    margin-bottom: 30px; /* More space between sections */
-    padding: 20px; /* Inner spacing */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
 }
 
 .certification h2 {
     color: #0056b3;
-    margin-bottom: 15px; /* More space below the headers */
-    font-size: 24px; /* Larger font size for section headers */
-}
-
-.certification ul {
-    display: none;
-    padding-left: 20px;
-}
-
-.certification.active ul {
-    display: block;
-}
-
-.certification li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
+.certification li {
+    background: #f0f0f0; /* Light background for each card */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Align items to the start of the container */
+}
+
 .certification img {
-    width: 140px;
+    width: 60px; /* Smaller images for a more compact layout */
     margin-bottom: 5px;
 }
 
 .certification p, .certification a {
-    margin-right: 10px;
+    margin: 5px 0; /* Reduced margin for a tighter layout */
     white-space: normal;
+    text-align: left; /* Ensure text is left-aligned */
 }
 
 footer p {
-    font-size: 16px; /* Slightly larger footer font */
-    padding: 10px 0; /* Padding for footer */
+    font-size: 16px;
+    padding: 20px 0;
 }
 
-/* Responsive layout adjustments */
 @media (max-width: 600px) {
-    main {
-        margin: 10px;
-        padding: 10px;
+    .certification {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
     }
 }
