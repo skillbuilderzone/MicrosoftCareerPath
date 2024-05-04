@@ -26,7 +26,7 @@ header h1 {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
@@ -38,7 +38,7 @@ main {
 .introduction p {
     font-size: 18px;
     padding: 20px;
-    color: #666;
+    color: #1b1b1b;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
 }
@@ -46,7 +46,7 @@ main {
 .certification {
     width: 100%;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .certification h2 {
@@ -60,7 +60,7 @@ main {
 .certification ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center-aligns the items horizontally */
+    justify-content: left; /* left-aligns the items horizontally */
 }
 
 .certification li {
@@ -70,47 +70,48 @@ main {
     margin: 10px; /* Ensures spacing around each item */
     width: calc(50% - 20px); /* Adjust width to fit two items per row */
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    align-items: left;
     display: flex;
     flex-direction: column;
 }
 
 .certification img {
-    width: 80px;
+    width: 140px;
     margin-bottom: 10px;
 }
 
 .certification strong {
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
 }
 
 .certification p, .certification a {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 5px;
 }
 
 .about-section {
-    width: 18%;
-    padding: 20px;
-    background-color: #eeabab;
+    width: 15%;
+    padding: 10px;
+    background-color: #2d88d3;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     right: 20px;
-    top: 100px;
-    height: calc(100% - 120px);
+    top: 130px;
+    /*height: calc(100% - 120px);*/
+    height: 400px;
 }
 
 .about-section h3 {
-    color: #0056b3;
+    color: #fdfeff;
     margin-bottom: 10px;
 }
 
 .about-section p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
-    color: #666;
+    color: #fffdfd;
 }
 
 /* Responsive adjustments for smaller screens */
