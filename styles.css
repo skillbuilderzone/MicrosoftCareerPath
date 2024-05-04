@@ -100,18 +100,29 @@ main {
     right: 20px;
     top: 130px;
     /*height: calc(100% - 120px);*/
-    height: 400px;
+    height: 380px;
 }
 
 .about-section h3 {
-    color: #fdfeff;
+    color: #ffffff;
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .about-section p {
     font-size: 20px;
     line-height: 1.6;
     color: #fffdfd;
+}
+
+.about-section strong {
+    font-size: 18px;
+    color: #fffefe;
+}
+
+.about-section a {
+    font-size: 20px;
+    color: #f2bb07;
 }
 
 /* Responsive adjustments for smaller screens */
